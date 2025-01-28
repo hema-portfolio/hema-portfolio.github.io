@@ -1,0 +1,168 @@
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a2e;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #dee2e6;
+    border-top: 5px solid #e94560;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.particle-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+#hero-particles, #skills-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #e94560;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: background 0.3s;
+}
+
+#back-to-top:hover {
+    background: #be3c4e;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    position: relative;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    z-index: 1;
+}
+/* .hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+} */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Section Padding */
+section {
+    padding: 3rem 1rem;
+}
+
+/* Navbar */
+.navbar-light .navbar-nav .nav-link {
+    color: #e94560;
+    transition: color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #be3c4e;
+}
+
+/* Alternate Section Backgrounds */
+#skills {
+    background: #16213e;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 4rem 1rem;
+}
+
+#contact {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+#about {
+    z-index: 3;
+}
+
+#projects {
+    z-index: 3;
+}
+
+/* Skills Section */
+#skills i {
+    color: #e94560;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#skills i:hover {
+    color: #be3c4e;
+    transform: scale(1.2);
+}
+
+/* Contact Form */
+#contact button {
+    background: #e94560;
+    border: none;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #be3c4e;
+}
+
+/* Images Hover Effect */
+img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(0.95);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
